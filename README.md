@@ -1,4 +1,4 @@
-# ClinicaScribe — Ambient AI Medical Scribe for Bilingual OPDs
+# ClinicaScribe â€” Ambient AI Medical Scribe for Bilingual OPDs
 
 ClinicaScribe is an ambient clinical documentation and prescription safety platform built specifically for high-volume bilingual (Urdu/English) Outpatient Departments (OPDs). It listens to ambient doctor-patient dialogue, generates structured SOAP clinical records, conducts real-time Drug-Drug Interaction (DDI) checks, provides physician-governed Clinical Decision Support (CDS), and produces an authentic Nastaliq Urdu patient advisory slip formatted for standard 1-page A4 printing.
 
@@ -26,29 +26,9 @@ ClinicaScribe is an ambient clinical documentation and prescription safety platf
 ## Quickstart Guide
 
 ### 1. Backend Setup
-\\\ash
+
+```bash
 cd backend
 python -m venv venv
-# On Windows:
 .\venv\Scripts\activate
 pip install -r requirements.txt
-\\\
-
-Create a \.env\ file in \ackend/\:
-\\\env
-GEMINI_API_KEY=your_gemini_api_key_here
-\\\
-
-Run the API:
-\\\ash
-uvicorn main:app --reload --host 127.0.0.1 --port 8000
-\\\
-
-### 2. Frontend Setup
-\\\ash
-cd frontend
-npm install
-npm run dev -- --host 127.0.0.1
-\\\
-
-Open \http://localhost:5173\ in Google Chrome.
